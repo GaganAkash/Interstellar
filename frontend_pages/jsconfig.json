@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".", // Base directory for resolving non-relative module names
+    "paths": {
+      // This maps "@/*" to "src/*"
+      // So, "@/components/ui/card" will resolve to "src/components/ui/card"
+      "@/*": ["./src/*"]
+    },
+    "jsx": "react-jsx", // Specify JSX factory for React
+    "allowJs": true, // Allow JavaScript files to be compiled
+    "target": "ESNext", // Specify ECMAScript target version
+    "module": "ESNext", // Specify module code generation
+    "moduleResolution": "node", // Specify module resolution strategy
+    "strict": true, // Enable all strict type-checking options
+    "esModuleInterop": true, // Enable interoperability between CommonJS and ES modules
+    "skipLibCheck": true, // Skip type checking of declaration files
+    "forceConsistentCasingInFileNames": true, // Disallow inconsistently-cased file names
+    "resolveJsonModule": true, // Allow importing of modules with a ‘.json’ extension
+    "isolatedModules": true // Ensure that each file can be safely transpiled without relying on other files
+  },
+  "include": ["src"], // Only include files under the 'src' directory
+  "exclude": ["node_modules", "dist"] // Exclude node_modules and build output
+}
